@@ -1,8 +1,14 @@
+read -p "Install Gnome Apps (y/n): " install_gnome_apps
+install_gnome_apps="$(echo $install_gnome_apps | tr '[A-Z]' '[a-z]')"
+
 sudo apt update
-# sudo apt upgrade -y
+sudo apt upgrade -y
 
 sudo apt install -y git p7zip-full p7zip-rar apt-transport-https curl
-sudo apt install -y nautilus gnome-tweak-tool
+
+if [[ "$install_gnome_apps" != n* ]]; then
+    sudo apt install -y nautilus gnome-tweak-tool gedit
+fi
 
 # zsh
 sudo apt install -y zsh
@@ -19,14 +25,6 @@ sudo apt clean
 # Pycharm
 # ln -s $(find /opt/pycharm-community-*/bin -name pycharm.sh) /usr/bin/pycharm
 # alias pycharm=$(find /opt/pycharm-community-*/bin -name pycharm.sh)
-
-
-# docker
-# https://docs.docker.com/engine/install/ubuntu/
-# https://docs.docker.com/engine/install/linux-postinstall/
-# sudo usermod -a -G docker expeder
-# sudo systemctl start docker.service
-# sudo systemctl start containerd.service
 
 # Qt5 themig
 # https://www.linuxuprising.com/2018/05/get-qt5-apps-to-use-native-gtk-style-in.html

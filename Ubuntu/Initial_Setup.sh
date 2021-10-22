@@ -52,15 +52,6 @@ sudo apt clean
 # set prime-select to intel after restart
 
 
-
-# docker
-# https://docs.docker.com/engine/install/ubuntu/
-# https://docs.docker.com/engine/install/linux-postinstall/
-# sudo usermod -a -G docker expeder
-# sudo systemctl start docker.service
-# sudo systemctl start containerd.service
-
-
 # adding swap memory
 # https://help.ubuntu.com/community/SwapFaq
 
