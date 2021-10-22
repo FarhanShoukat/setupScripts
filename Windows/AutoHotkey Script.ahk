@@ -7,7 +7,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 setTitleMatchMode, 2 ; set title match mode to "contains"
 
 ; this code was auto generated at:
-; https://www.ahkgen.com/?indexes=0%2C1&comment0=Terminal&func0=KEY&skey0%5B%5D=WIN&skeyValue0=T&Window0=Windows+Terminal&Program0=wt&option0=ActivateOrOpen&comment1=Close+Active+Window&func1=KEY&skey1%5B%5D=WIN&skeyValue1=q&Code1=WinGetTitle%2C+Title%2C+A%0D%0APostMessage%2C+0x112%2C+0xF060%2C%2C%2C+%25Title%25%0D%0Areturn&option1=Custom
+; https://www.ahkgen.com/?indexes=0%2C1&comment0=Terminal&func0=KEY&skey0%5B%5D=WIN&skeyValue0=T&Window0=Windows+Terminal&Program0=wt&option0=ActivateOrOpen&comment1=Close+Active+Window&func1=KEY&skey1%5B%5D=WIN&skeyValue1=q&Code1=+%3B+Windows+and+q+closes+active+window%0D%0AWinGetTitle%2C+Title%2C+A%0D%0APostMessage%2C+0x112%2C+0xF060%2C%2C%2C+%25Title%25%0D%0Areturn&option1=Custom
 
 ; *********************** Configured region - selected functions ************
 
@@ -15,17 +15,18 @@ setTitleMatchMode, 2 ; set title match mode to "contains"
 #T::ActivateOrOpen("Windows Terminal", "wt")
 
 
-;Close active window
+;Close Active Window
 #q:: ; Windows and q closes active window
 WinGetTitle, Title, A
 PostMessage, 0x112, 0xF060,,, %Title%
 return
 
 
+
 ; *********************** Provided Functions ********************************
 OpenConfig()
 {
-    Run, "https://www.ahkgen.com/?indexes=0`%2C1&comment0=Terminal&func0=KEY&skey0`%5B`%5D=WIN&skeyValue0=T&Window0=Windows+Terminal&Program0=wt&option0=ActivateOrOpen&comment1=Close+Active+Window&func1=KEY&skey1`%5B`%5D=WIN&skeyValue1=q&Code1=WinGetTitle`%2C+Title`%2C+A`%0D`%0APostMessage`%2C+0x112`%2C+0xF060`%2C`%2C`%2C+`%25Title`%25`%0D`%0Areturn&option1=Custom"
+    Run, "https://www.ahkgen.com/?indexes=0%2C1&comment0=Terminal&func0=KEY&skey0%5B%5D=WIN&skeyValue0=T&Window0=Windows+Terminal&Program0=wt&option0=ActivateOrOpen&comment1=Close+Active+Window&func1=KEY&skey1%5B%5D=WIN&skeyValue1=q&Code1=+%3B+Windows+and+q+closes+active+window%0D%0AWinGetTitle%2C+Title%2C+A%0D%0APostMessage%2C+0x112%2C+0xF060%2C%2C%2C+%25Title%25%0D%0Areturn&option1=Custom"
 }
 
 LockWorkStation()
