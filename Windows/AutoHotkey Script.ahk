@@ -26,7 +26,7 @@ return
 ; *********************** Provided Functions ********************************
 OpenConfig()
 {
-    Run, "https://www.ahkgen.com/?indexes=0%2C1&comment0=Terminal&func0=KEY&skey0%5B%5D=WIN&skeyValue0=T&Window0=Windows+Terminal&Program0=wt&option0=ActivateOrOpen&comment1=Close+Active+Window&func1=KEY&skey1%5B%5D=WIN&skeyValue1=q&Code1=+%3B+Windows+and+q+closes+active+window%0D%0AWinGetTitle%2C+Title%2C+A%0D%0APostMessage%2C+0x112%2C+0xF060%2C%2C%2C+%25Title%25%0D%0Areturn&option1=Custom"
+    Run, "https://www.ahkgen.com/?indexes=0`%2C1&comment0=Terminal&func0=KEY&skey0`%5B`%5D=WIN&skeyValue0=T&Window0=Windows+Terminal&Program0=wt&option0=ActivateOrOpen&comment1=Close+Active+Window&func1=KEY&skey1`%5B`%5D=WIN&skeyValue1=q&Code1=+`%3B+Windows+and+q+closes+active+window`%0D`%0AWinGetTitle`%2C+Title`%2C+A`%0D`%0APostMessage`%2C+0x112`%2C+0xF060`%2C`%2C`%2C+`%25Title`%25`%0D`%0Areturn&option1=Custom"
 }
 
 LockWorkStation()
