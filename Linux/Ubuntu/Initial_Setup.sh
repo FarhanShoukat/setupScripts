@@ -2,10 +2,7 @@ sudo apt update
 sudo apt upgrade -y
 
 sudo apt install -y git p7zip-full p7zip-rar apt-transport-https curl vlc gparted
-sudo apt install -y gnome-tweak-tool dconf-editor
-
-sudo snap install pycharm-community --classic
-sudo snap install postman
+sudo apt install -y gnome-tweaks dconf-editor
 
 sudo apt install -y ubuntu-restricted-extras
 
@@ -13,8 +10,8 @@ sudo apt install -y ubuntu-restricted-extras
 sudo apt install -y zsh
 # chsh -s $(which zsh) 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 sed -i 's/plugins=(git)/plugins=(git zsh-syntax-highlighting zsh-autosuggestions)/g' ~/.zshrc
 
 # qbittorrent
@@ -68,4 +65,5 @@ sudo apt clean
 # bash -c "if [[ $(gsettings get org.gnome.settings-daemon.plugins.color night-light-enabled) == "true" ]]; then gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false; else gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true; fi"
 
 
+# https://itsfoss.com/install-vmware-player-ubuntu-1310/
 # web installs: mega, brave, ms edge, miniconda, docker, vs code
