@@ -1,6 +1,3 @@
-sudo apt update
-sudo apt install -y snapd
-
 sudo snap install snap-store
 
 sudo snap install pycharm-community --classic
