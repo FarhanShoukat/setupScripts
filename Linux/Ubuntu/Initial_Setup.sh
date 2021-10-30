@@ -1,8 +1,9 @@
 sudo apt update
 sudo apt upgrade -y
 
-sudo apt install -y git p7zip-full p7zip-rar apt-transport-https curl vlc gparted snapd
-sudo apt install -y gnome-tweaks dconf-editor
+sudo apt install -y git p7zip-full p7zip-rar apt-transport-https curl vlc gparted snapd synaptic
+sudo apt install -y gnome-tweaks
+sudo ubuntu-drivers install nvidia
 
 # qbittorrent
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
