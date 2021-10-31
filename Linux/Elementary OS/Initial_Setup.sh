@@ -33,3 +33,6 @@ sudo apt clean
 
 # dark theme for gnome/gtk apps
 # https://github.com/elementary/stylesheet/issues/1014
+
+# indicator/tray icons for apps like mega
+# https://github.com/Lafydev/wingpanel-indicator-ayatana
