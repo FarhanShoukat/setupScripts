@@ -3,7 +3,7 @@ sudo apt upgrade -y
 sudo apt dist-upgrade
 
 sudo apt install -y git p7zip-full p7zip-rar apt-transport-https curl vlc gparted snapd firefox synaptic software-properties-common
-sudo apt install -y gnome-disk-utility nautilus gnome-system-monitor
+sudo apt install -y gnome-disk-utility nautilus gnome-system-monitor gedit
 sudo ubuntu-drivers install nvidia
 
 # pantheon-tweaks
