@@ -10,7 +10,7 @@ sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
 sudo apt update
 sudo apt install -y qbittorrent
 
-sudo apt install -y ubuntu-restricted-extras
+# sudo apt install -y ubuntu-restricted-extras
 
 # zsh
 sudo apt install -y zsh
