@@ -59,4 +59,4 @@ sudo apt clean
 
 
 # https://itsfoss.com/install-vmware-player-ubuntu-1310/
-# web installs: mega, brave, ms edge, miniconda, docker, vs code
+# web installs: mega, brave, miniconda, vs code
